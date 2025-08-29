@@ -6,6 +6,7 @@ const Event = sequelize.define('Event', {
   name: { type: DataTypes.STRING, allowNull: false },
   date: { type: DataTypes.DATEONLY, allowNull: false },
   description: { type: DataTypes.TEXT, allowNull: false },
+  posterUrl: { type: DataTypes.STRING } // New field for the event poster
 }, { timestamps: true });
 
 module.exports = Event;

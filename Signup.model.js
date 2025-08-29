@@ -7,6 +7,8 @@ const Signup = sequelize.define('Signup', {
   artistName: { type: DataTypes.STRING, allowNull: false },
   contactEmail: { type: DataTypes.STRING, allowNull: false },
   genre: { type: DataTypes.STRING, allowNull: false },
+  description: { type: DataTypes.TEXT }, // New field for artist bio
+  promoPhotos: { type: DataTypes.TEXT } // New field for photo URLs
 }, { timestamps: true });
 
 Signup.belongsTo(Event);

@@ -16,7 +16,8 @@ const seedDatabase = async () => {
     await Event.create({
       name: 'Galactic Music Festival',
       date: '2025-10-26',
-      description: 'A system-wide broadcast featuring the best musical talents from across the galaxy.'
+      description: 'A system-wide broadcast featuring the best musical talents from across the galaxy.',
+      posterUrl: 'https://placehold.co/600x400/0a0a14/38bdf8?text=Event+Poster'
     });
     await Config.create({
       key: 'ceoPhotoUrl',
